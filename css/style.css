@@ -223,84 +223,96 @@ span {
     margin: 1rem 0 3rem;
 }
 
-.portfolio {
+
+
+/* #### SKILLS PAGE #### */
+.skills{
+    padding: 2rem 3 2.5rem 0;
+}
+.skills  .text{
+    font-size: 1.6rem;
+    margin: 2rem 0 3rem;
+    text-align: center;
+}
+.skills .row{
+    margin: 1rem 0;
+}
+.skills .item{
+    padding: 0.5rem 0;
+    margin: 0.3rem 0;
+}
+.skills .item-text{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: 200;
+    font-size: 2rem;
+    position: relative;
+}
+.skills .item-text span:last-child{
+    position: absolute;
+}
+.skills .item-text .w-90{
+    margin-left: 90%;
+}
+.skills .item-text .w-75{
+    margin-left: 75%;
+}
+.skills .item-text .w-60{
+    margin-left: 60%;
+}
+.skills .item-text .w-70{
+    margin-left: 70%;
+}
+.skills .item-text .w-72{
+    margin-left: 72%;
+}
+.skills .item-text .w-68{
+    margin-left: 63%;
+}
+.progress{
+    margin: 0.8rem 0;
+    border-radius: 10px;
+    height: 16px;
+    width: 100%;
+    background-color: var(--bg-color);
+    overflow: hidden;
+}
+.progress-bar{
+    background: var(--main-color);
+    height: 100%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+}
+.progress-bar.w-90{
+    width: 90%;
+}
+.progress-bar.w-75{
+    width: 75%;
+}
+.progress-bar.w-60{
+    width: 60%;
+}
+.progress-bar.w-70{
+    width: 70%;
+}
+.progress-bar.w-72{
+    width: 72%;
+}
+.progress-bar.w-68{
+    width: 68%;
+}
+
+.skills {
     background: var(--second-bg-color);
 }
 
-.portfolio h2 {
-    margin-bottom: 4rem;
-}
-
-.portfolio-container {
+.skills .row{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(1, 0.8fr);
-    gap: 2.5rem;
-}
-
-.portfolio-container .portfolio-box {
-    position: relative;
-    border-radius: 2rem;
-    box-shadow: 0 0 1rem var(--bg-color);
-    overflow: hidden;
-    display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
 }
 
 
-.portfolio-box img {
-    width: 100%;
-    transition: .5s ease;
-}
-
-
-.portfolio-box:hover img {
-    transform: scale(1.1);
-}
-
-.portfolio-box .portfolio-layer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
-    padding: 0 4rem;
-    transform: translateY(100%);
-    transition: .5 ease;
-}
-
-.portfolio-box:hover .portfolio-layer {
-    transform: translateY(0);
-}
-
-.portfolio-layer h4 {
-    font-size: 3rem;
-}
-
-.portfolio-layer p {
-    font-size: 1.6rem;
-    margin: .3rem 0 1rem;
-}
-
-.portfolio-layer a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 5rem;
-    height: 5rem;
-    background: var(--text-color);
-    border-radius: 50%;
-}
-
-.portfolio-layer a i {
-    font-size: 2rem;
-    color: var(--second-bg-color);
-}
 
 .contact h2 {
     margin-bottom: 3rem;
